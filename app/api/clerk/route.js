@@ -21,7 +21,7 @@ export async function POST(req){
         name:`${data.first_name} ${data.last_name}`,
         image:data.image_url,
     };
-    await connectDB;
+    await connectDB();
     switch (type) {
         case 'user.created':
             await  User.create(userData)
