@@ -14,7 +14,8 @@ export async function POST(req){
     };
     //get payload and verify it
     const payload=await req.json();
-    const body= JSON.stringify(payload)
+    const body= JSON.stringify(payload);
+    const {data,type}=wh.verify(body,svixHeaders)
     // prep the user data to be saved
     const userData={
         _id:data.id,
