@@ -4,6 +4,13 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 First, run the development server:
 
+Add .env file:
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+MONGODB_URI=
+SIGNING_SECRET=
+DEEPSEEK_API_KEY=
+
 ```bash
 npm run dev
 # or
